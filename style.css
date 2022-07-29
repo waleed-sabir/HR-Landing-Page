@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /*16px = 1rem ==> 1px = 1/16rem ==> 10px = 1/16rem x 10px ==> 62.5% */
+  box-sizing: border-box;
+  font-family: "Work Sans", arial, sans-serif;
+  line-height: 1.2;
+}
+
+header {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(images/xhero_1.jpg.pagespeed.ic.yu1ylfvph1.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  height: 14rem;
+  width: 85%;
+  margin: auto;
+  /* background-color: royalblue; */
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.hero-heading {
+  /* background-color: rosybrown; */
+  position: absolute;
+  left: 20.5%;
+  top: 25%;
+}
+
+.hero-heading span {
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+header h1 {
+  word-spacing: 2px;
+  font-size: 3.8rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+header p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.hero-btns {
+  /* background-color: antiquewhite; */
+  margin-top: 4rem;
+}
+
+.hero-btns button {
+  background-color: #3a82ff;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 1.5rem 2rem;
+  margin-right: 2rem;
+  border: none;
+  outline: none;
+}
+
+.hero-btns a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.hero-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: lightcoral; */
+  margin-top: 10rem;
+  width: 75%;
+}
+
+.hero-cards .card {
+  background-color: #fff;
+  width: 26%;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  box-shadow: 2px 4px 9px 5px rgba(0, 0, 0, 0.09);
+}
+
+.card .icon {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  color: #3a82ff;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.card p {
+  color: #999;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.card a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #000;
+}
+.intro {
+  /* margin-top: 30rem; */
+  padding: 25rem 28rem;
+  padding-bottom: 10rem;
+}
+.intro-row {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-left-col {
+  flex-basis: 70%;
+}
+
+.intro-right-col {
+  flex-basis: 30%;
+}
+
+.intro-left-col img {
+  width: 90%;
+}
+
+.intro-left-col h2 {
+  font-size: 2.6em;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.intro-right-col h2 {
+  font-size: 2.6em;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.intro-right-col .sub-headings {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.sub-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.sub-heading .icon {
+  margin-right: 1.6rem;
+}
+
+.sub-heading-content {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.sub-heading-content .bar {
+  width: 20rem;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin-right: 2rem;
+}
+
+.sub-heading-content p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #999;
+  line-height: 1.6;
+}
+
+.sub-heading-content span {
+  font-weight: 400;
+  color: #000;
+}
+
+.sub-heading:first-child {
+  color: #3a82ff;
+}
+
+.stats {
+  background-color: rgba(0, 0, 0, 0.02);
+  height: 18rem;
+  margin-bottom: 10rem;
+}
+.stats .container {
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 18rem;
+  width: 60%;
+  margin: auto;
+}
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  color: #3a82ff;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+.stat p {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.leadership {
+  padding: 0 28rem;
+  margin-bottom: 10rem;
+}
+
+.leadership-row {
+  margin-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.leadership h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+
+.leadership-col {
+  position: relative;
+}
+.leadership-col img {
+  width: 95%;
+}
+
+.person-bio {
+  background-color: #fff;
+  width: 80%;
+  padding: 1rem;
+  padding-top: 0.8rem;
+  position: absolute;
+  top: 66%;
+  right: 9%;
+}
+
+.person-bio h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.person-bio p {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #999;
+}
+
+/* Customers Section */
+
+.customers {
+  padding: 0 28rem;
+}
+
+.customers h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+
+.customers .quote {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.customers blockquote {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.customers p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 8rem;
+}
+
+.customers .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.pagination span {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #999;
+  margin-right: 0.7rem;
+  cursor: pointer;
+}
+
+.pagination span:first-child {
+  background-color: #000;
+}
+
+/* Serivces Section */
+
+.services {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 0 28rem;
+  padding-bottom: 10rem;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  padding-top: 10rem;
+  margin-bottom: 6rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 6rem;
+}
+.service {
+  text-align: center;
+}
+
+.service .service-icon {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+  color: #3a82ff;
+}
+
+.service h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.service p {
+  font-size: 1.1rem;
+  color: #999;
+  line-height: 1.8;
+}
+
+.services button {
+  display: block;
+  margin: auto;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+}
+
+/* Blog Section */
+
+.blog {
+  padding: 0 28rem;
+}
+
+.blog h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 400;
+  padding-top: 8rem;
+  margin-bottom: 1rem;
+}
+
+.blog p {
+  font-size: 1.1rem;
+  color: #999;
+  text-align: center;
+  width: 70%;
+  line-height: 1.8;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.blog .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 8rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery-grid .img1 {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-grid .img4 {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-grid .img2 {
+  grid-column: span 2;
+}
+
+.gallery-grid .img3 {
+  grid-column: span 2;
+}
+
+/* Footer */
+
+footer {
+  padding: 0 28rem;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.footer-row {
+  padding: 10rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-col h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 0.5);
+  margin-bottom: 1rem;
+}
+
+.footer-col:first-child p {
+  color: #999;
+}
+
+.footer-col p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #000;
+}
+
+.footer-col:first-child {
+  flex-basis: 30%;
+}
+
+footer .copyright {
+  color: #999;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 10rem;
+}
+
+footer .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.social-icons .icon {
+  font-size: 1.4rem;
+  margin-right: 1rem;
+}
