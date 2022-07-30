@@ -7,7 +7,6 @@ html {
   font-size: 62.5%; /*16px = 1rem ==> 1px = 1/16rem ==> 10px = 1/16rem x 10px ==> 62.5% */
   box-sizing: border-box;
   font-family: "Work Sans", arial, sans-serif;
-  line-height: 1.2;
 }
 
 header {
@@ -19,6 +18,51 @@ header {
   background-size: cover;
 }
 
+.mobile-nav {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3a82ff;
+}
+.mobile-logo {
+  background-color: #3a82ff;
+  padding: 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.mobile-nav span::before {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 2.3rem;
+
+  background-color: #fff;
+  margin: 0;
+  margin-top: 0.8rem;
+  border-radius: 10px;
+}
+
+.mobile-nav span {
+  height: 0.3rem;
+  width: 2.3rem;
+  background-color: #fff;
+  margin: 0;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+}
+
+.mobile-nav span::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 2.3rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -27,7 +71,6 @@ nav {
   height: 14rem;
   width: 85%;
   margin: auto;
-  /* background-color: royalblue; */
   position: relative;
 }
 
@@ -45,7 +88,6 @@ nav {
 }
 
 .hero-heading {
-  /* background-color: rosybrown; */
   position: absolute;
   left: 20.5%;
   top: 25%;
@@ -69,8 +111,8 @@ header p {
   font-weight: 300;
 }
 
+/* Hero buttons */
 .hero-btns {
-  /* background-color: antiquewhite; */
   margin-top: 4rem;
 }
 
@@ -94,11 +136,11 @@ header p {
   font-size: 1.2rem;
 }
 
+/* Hero Cards */
 .hero-cards {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* background-color: lightcoral; */
   margin-top: 10rem;
   width: 75%;
 }
@@ -136,13 +178,15 @@ header p {
   text-decoration: none;
   color: #000;
 }
+
+/* Intro Section */
 .intro {
-  /* margin-top: 30rem; */
   padding: 25rem 28rem;
   padding-bottom: 10rem;
 }
 .intro-row {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
@@ -159,15 +203,16 @@ header p {
 }
 
 .intro-left-col h2 {
-  font-size: 2.6em;
+  font-size: 2.6rem;
   font-weight: 400;
   margin-bottom: 4rem;
 }
 
 .intro-right-col h2 {
-  font-size: 2.6em;
+  font-size: 2.6rem;
   font-weight: 400;
   margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .intro-right-col .sub-headings {
@@ -213,13 +258,13 @@ header p {
   color: #3a82ff;
 }
 
+/* Stats Section */
 .stats {
   background-color: rgba(0, 0, 0, 0.02);
   height: 18rem;
   margin-bottom: 10rem;
 }
 .stats .container {
-  /* background-color: aquamarine; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -243,6 +288,7 @@ header p {
   font-size: 1.2rem;
 }
 
+/* Leadership Section */
 .leadership {
   padding: 0 28rem;
   margin-bottom: 10rem;
@@ -511,4 +557,1001 @@ footer .social-icons {
 .social-icons .icon {
   font-size: 1.4rem;
   margin-right: 1rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1400px) {
+  /* Intro Section */
+  .intro {
+    padding: 25rem 26rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 26rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 26rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 26rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 26rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  /* Intro Section */
+  .intro {
+    padding: 25rem 22rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 22rem;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0 22rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 22rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 22rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 22rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Intro Section */
+  .intro {
+    padding: 25rem 16rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 16rem;
+  }
+  /* Customers Section */
+  .customers {
+    padding: 0 18rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 16rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 16rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 16rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Intro Section */
+  .intro {
+    padding: 20rem 8rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Hero cards */
+  .hero-cards {
+    justify-content: space-between;
+  }
+
+  .hero-cards .card {
+    width: 25%;
+  }
+  .card .icon {
+    font-size: 3rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 8rem;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0 8rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 8rem;
+    padding-bottom: 10rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 8rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  .menu a {
+    font-size: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+  /* Hero cards */
+  .hero-cards {
+    justify-content: space-between;
+  }
+
+  .hero-cards .card {
+    width: 25%;
+  }
+  .card .icon {
+    font-size: 3rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 20rem 8rem;
+    padding-bottom: 10rem;
+  }
+
+  .intro-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-left-col {
+    flex-basis: 100%;
+  }
+
+  .intro-left-col img {
+    width: 100%;
+  }
+
+  .intro-right-col {
+    flex-basis: 100%;
+  }
+
+  .sub-heading-content .bar {
+    width: 8rem;
+  }
+
+  /* Stats Section */
+  .stats {
+    height: 18rem;
+    padding: 10rem 0;
+  }
+
+  .stats .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 8rem;
+  }
+
+  .leadership-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 3rem;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0 8rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 8rem;
+    padding-bottom: 10rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 8rem;
+  }
+
+  .blog p {
+    width: 80%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 8rem;
+  }
+
+  .footer-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 586px) {
+  /* Header */
+  nav {
+    justify-content: space-between;
+  }
+  .menu a {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .hero-heading {
+    left: 18.5%;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  /* Hero cards */
+  .hero-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .hero-cards .card {
+    width: 87%;
+  }
+
+  .hero-cards .card:first-child h3,
+  .hero-cards .card:first-child p,
+  .hero-cards .card:first-child a {
+    display: none;
+  }
+
+  .hero-cards .card:nth-child(2) h3,
+  .hero-cards .card:nth-child(2) p,
+  .hero-cards .card:nth-child(2) a {
+    display: none;
+  }
+
+  .hero-cards .card:first-child,
+  .hero-cards .card:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  .hero-cards .card:first-child .icon,
+  .hero-cards .card:nth-child(2) .icon {
+    margin-bottom: 0.4rem;
+  }
+
+  .card .icon {
+    font-size: 2.6rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 25rem 6rem;
+    padding-bottom: 10rem;
+  }
+
+  .intro-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-left-col {
+    flex-basis: 100%;
+  }
+
+  .intro-left-col img {
+    width: 100%;
+  }
+
+  .intro-right-col {
+    flex-basis: 100%;
+  }
+
+  .sub-heading-content .bar {
+    width: 8rem;
+  }
+
+  /* Stats Section */
+  .stats {
+    height: 18rem;
+    padding: 10rem 0;
+  }
+
+  .stats .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 6rem;
+  }
+
+  .leadership-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    row-gap: 3rem;
+  }
+
+  .leadership-col img {
+    width: 100%;
+  }
+
+  .person-bio {
+    padding: 0.8rem;
+    width: 80%;
+    right: 7%;
+    top: 71%;
+  }
+
+  .person-bio h3 {
+    margin: 0;
+  }
+
+  .person-bio p {
+    margin: 0;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0 5rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 6rem;
+    padding-bottom: 10rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 6rem;
+  }
+
+  .blog p {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 6rem;
+  }
+
+  .footer-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+}
+
+/* MEDIA QUERIES FOR MOBILE SCREENS */
+
+@media (max-width: 425px) {
+  /* Mobile nav */
+  .mobile-nav {
+    display: flex;
+  }
+  /* Main nav */
+  nav {
+    display: none;
+  }
+  .menu a {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .hero-heading {
+    left: 10.5%;
+    top: 20%;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  /* Hero cards */
+  .hero-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .hero-cards .card {
+    width: 96%;
+  }
+
+  .hero-cards .card:first-child h3,
+  .hero-cards .card:first-child p,
+  .hero-cards .card:first-child a {
+    display: none;
+  }
+
+  .hero-cards .card:nth-child(2) h3,
+  .hero-cards .card:nth-child(2) p,
+  .hero-cards .card:nth-child(2) a {
+    display: none;
+  }
+
+  .hero-cards .card:first-child,
+  .hero-cards .card:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  .hero-cards .card:first-child .icon,
+  .hero-cards .card:nth-child(2) .icon {
+    margin-bottom: 0.4rem;
+  }
+  .card .icon {
+    font-size: 2.4rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 20rem 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .intro-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-left-col {
+    flex-basis: 100%;
+  }
+
+  .intro-left-col img {
+    width: 100%;
+  }
+
+  .intro-right-col {
+    flex-basis: 100%;
+  }
+
+  .sub-heading-content .bar {
+    width: 8rem;
+  }
+
+  /* Stats Section */
+  .stats {
+    height: 18rem;
+    padding: 10rem 0;
+  }
+
+  .stats .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 2rem;
+  }
+
+  .leadership-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .leadership-col img {
+    width: 100%;
+  }
+
+  .person-bio {
+    padding: 0.8rem;
+    width: 80%;
+    right: 6%;
+    top: 67%;
+  }
+
+  .person-bio h3 {
+    margin: 0;
+  }
+
+  .person-bio p {
+    margin: 0;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0 3rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 2rem;
+  }
+
+  .blog p {
+    width: 100%;
+  }
+
+  .blog .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 2rem;
+  }
+
+  .footer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Mobile nav */
+  .mobile-nav {
+    display: flex;
+  }
+
+  /* Main nav */
+  nav {
+    display: none;
+  }
+  .menu a {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .hero-heading {
+    left: 10.5%;
+    top: 20%;
+  }
+
+  .hero-heading p .break {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  /* Hero cards */
+  .hero-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .hero-cards .card {
+    width: 96%;
+  }
+
+  .hero-cards .card:first-child h3,
+  .hero-cards .card:first-child p,
+  .hero-cards .card:first-child a {
+    display: none;
+  }
+
+  .hero-cards .card:nth-child(2) h3,
+  .hero-cards .card:nth-child(2) p,
+  .hero-cards .card:nth-child(2) a {
+    display: none;
+  }
+
+  .hero-cards .card:first-child,
+  .hero-cards .card:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  .hero-cards .card:first-child .icon,
+  .hero-cards .card:nth-child(2) .icon {
+    margin-bottom: 0.4rem;
+  }
+  .card .icon {
+    font-size: 2.4rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 20rem 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .intro-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-left-col {
+    flex-basis: 100%;
+  }
+
+  .intro-left-col img {
+    width: 100%;
+  }
+
+  .intro-right-col {
+    flex-basis: 100%;
+  }
+
+  .sub-heading-content .bar {
+    width: 8rem;
+  }
+
+  /* Stats Section */
+  .stats {
+    height: 18rem;
+    padding: 10rem 0;
+  }
+
+  .stats .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 2rem;
+  }
+
+  .leadership-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .leadership-col img {
+    width: 100%;
+  }
+
+  .person-bio {
+    padding: 1.4rem;
+    width: 80%;
+    right: 6%;
+    top: 76%;
+  }
+
+  .person-bio h3 {
+    margin: 0;
+  }
+
+  .person-bio p {
+    margin: 0;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0 1rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 2rem;
+  }
+
+  .blog p {
+    width: 100%;
+  }
+
+  .blog .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 2rem;
+  }
+
+  .footer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* Mobile nav */
+  .mobile-nav {
+    display: flex;
+  }
+
+  /* Main nav */
+  nav {
+    display: none;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .hero-heading {
+    left: 6.5%;
+    top: 20%;
+  }
+
+  .hero-heading p .break {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  /* Hero cards */
+  .hero-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+
+  .hero-cards .card {
+    width: 100%;
+  }
+
+  .hero-cards .card:first-child h3,
+  .hero-cards .card:first-child p,
+  .hero-cards .card:first-child a {
+    display: none;
+  }
+
+  .hero-cards .card:nth-child(2) h3,
+  .hero-cards .card:nth-child(2) p,
+  .hero-cards .card:nth-child(2) a {
+    display: none;
+  }
+
+  .hero-cards .card:first-child,
+  .hero-cards .card:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  .hero-cards .card:first-child .icon,
+  .hero-cards .card:nth-child(2) .icon {
+    margin-bottom: 0.4rem;
+  }
+
+  .card .icon {
+    font-size: 2.4rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 20rem 1rem;
+    padding-bottom: 10rem;
+  }
+
+  .intro-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-left-col {
+    flex-basis: 100%;
+  }
+
+  .intro-left-col img {
+    width: 100%;
+  }
+
+  .intro-right-col {
+    flex-basis: 100%;
+  }
+
+  .sub-heading-content .bar {
+    width: 8rem;
+  }
+
+  /* Stats Section */
+  .stats {
+    height: 18rem;
+    padding: 10rem 0;
+  }
+
+  .stats .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 1rem;
+  }
+
+  .leadership-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .leadership-col img {
+    width: 100%;
+  }
+
+  .person-bio {
+    padding: 1.4rem;
+    width: 83%;
+    right: 4%;
+    top: 76%;
+  }
+
+  .person-bio h3 {
+    margin: 0;
+  }
+
+  .person-bio p {
+    margin: 0;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0;
+  }
+
+  .customers blockquote,
+  .customers p {
+    font-size: 1.4rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0 1rem;
+  }
+
+  .blog p {
+    width: 100%;
+  }
+
+  .blog .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 1rem;
+  }
+
+  .footer-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
