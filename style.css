@@ -22,10 +22,10 @@ header {
   display: none;
   align-items: center;
   justify-content: space-between;
-  background-color: #3a82ff;
+  background-color: #0389ff;
 }
 .mobile-logo {
-  background-color: #3a82ff;
+  background-color: #0389ff;
   padding: 2rem;
   font-size: 1.5rem;
   color: #fff;
@@ -117,7 +117,7 @@ header p {
 }
 
 .hero-btns button {
-  background-color: #3a82ff;
+  background-color: #0389ff;
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
@@ -156,7 +156,7 @@ header p {
 .card .icon {
   font-size: 3.6rem;
   margin-bottom: 2rem;
-  color: #3a82ff;
+  color: #0389ff;
 }
 
 .card h3 {
@@ -238,7 +238,7 @@ header p {
 
 .sub-heading-content .bar {
   width: 20rem;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #f8f9fa;
   margin-right: 2rem;
 }
 
@@ -255,12 +255,12 @@ header p {
 }
 
 .sub-heading:first-child {
-  color: #3a82ff;
+  color: #0389ff;
 }
 
 /* Stats Section */
 .stats {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #f8f9fa;
   height: 18rem;
   margin-bottom: 10rem;
 }
@@ -277,7 +277,7 @@ header p {
 }
 
 .stat h2 {
-  color: #3a82ff;
+  color: #0389ff;
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 1.6rem;
@@ -396,7 +396,7 @@ header p {
 /* Serivces Section */
 
 .services {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #f8f9fa;
   padding: 0 28rem;
   padding-bottom: 10rem;
 }
@@ -423,7 +423,7 @@ header p {
 .service .service-icon {
   font-size: 3.6rem;
   margin-bottom: 1rem;
-  color: #3a82ff;
+  color: #0389ff;
 }
 
 .service h3 {
@@ -510,7 +510,7 @@ header p {
 
 footer {
   padding: 0 28rem;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #f8f9fa;
 }
 
 .footer-row {
@@ -523,7 +523,7 @@ footer {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 400;
-  color: rgba(153, 153, 153, 0.5);
+  color: #cccccc;
   margin-bottom: 1rem;
 }
 
