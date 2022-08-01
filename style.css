@@ -548,6 +548,11 @@ footer .copyright {
   padding-bottom: 10rem;
 }
 
+footer .colorlib {
+  text-decoration: none;
+  color: #0389ff;
+}
+
 footer .social-icons {
   display: flex;
   align-items: center;
@@ -788,7 +793,19 @@ footer .social-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    row-gap: 3rem;
+    /* row-gap: 3rem; */
+  }
+
+  .leadership-col img {
+    width: 100%;
+    height: 38rem;
+    object-fit: cover;
+  }
+
+  .person-bio {
+    width: 87%;
+    right: 3%;
+    top: 76%;
   }
 
   /* Customers Section */
@@ -839,7 +856,7 @@ footer .social-icons {
   }
 
   .hero-heading {
-    left: 18.5%;
+    left: 10%;
   }
 
   header h1 {
@@ -854,11 +871,11 @@ footer .social-icons {
   .hero-cards {
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 81%;
   }
 
   .hero-cards .card {
-    width: 87%;
+    width: 100%;
   }
 
   .hero-cards .card:first-child h3,
@@ -941,22 +958,23 @@ footer .social-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    row-gap: 3rem;
   }
 
   .leadership-col img {
     width: 100%;
+    height: 32rem;
+    object-fit: cover;
   }
 
   .person-bio {
     padding: 0.8rem;
     width: 80%;
     right: 7%;
-    top: 71%;
+    top: 74%;
   }
 
   .person-bio h3 {
-    margin: 0;
+    margin: 1rem 0;
   }
 
   .person-bio p {
@@ -1017,7 +1035,7 @@ footer .social-icons {
   }
 
   .hero-heading {
-    left: 10.5%;
+    left: 4.5%;
     top: 20%;
   }
 
@@ -1033,11 +1051,197 @@ footer .social-icons {
   .hero-cards {
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 85.1%;
   }
 
   .hero-cards .card {
-    width: 96%;
+    width: 100%;
+  }
+
+  .hero-cards .card:first-child h3,
+  .hero-cards .card:first-child p,
+  .hero-cards .card:first-child a {
+    display: none;
+  }
+
+  .hero-cards .card:nth-child(2) h3,
+  .hero-cards .card:nth-child(2) p,
+  .hero-cards .card:nth-child(2) a {
+    display: none;
+  }
+
+  .hero-cards .card:first-child,
+  .hero-cards .card:nth-child(2) {
+    padding-bottom: 0;
+  }
+
+  .hero-cards .card:first-child .icon,
+  .hero-cards .card:nth-child(2) .icon {
+    margin-bottom: 0.4rem;
+  }
+  .card .icon {
+    font-size: 2.4rem;
+  }
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
+  /* Intro Section */
+  .intro {
+    padding: 20rem 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .intro-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro-left-col {
+    flex-basis: 100%;
+  }
+
+  .intro-left-col img {
+    width: 100%;
+  }
+
+  .intro-right-col {
+    flex-basis: 100%;
+  }
+
+  .sub-heading-content .bar {
+    width: 8rem;
+  }
+
+  /* Stats Section */
+  .stats {
+    height: 18rem;
+    padding: 10rem 0;
+  }
+
+  .stats .container {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  /* Leadership Section */
+  .leadership {
+    padding: 0 2rem;
+  }
+
+  .leadership-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .leadership-col img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .person-bio {
+    padding: 0.8rem;
+    width: 69%;
+    right: 11%;
+    top: 67%;
+  }
+
+  .person-bio h3 {
+    margin: 1rem 0;
+  }
+
+  .person-bio p {
+    margin: 0;
+  }
+
+  /* Customers Section */
+  .customers {
+    padding: 0 3rem;
+  }
+
+  /* Services Section */
+  .services {
+    padding: 0 2rem;
+    padding-bottom: 10rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  /* Blog Section */
+  .blog {
+    padding: 0;
+  }
+
+  .blog p {
+    width: 95%;
+  }
+
+  .blog .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  footer {
+    padding: 0 2rem;
+  }
+
+  .footer-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  /* Mobile nav */
+  .mobile-nav {
+    display: flex;
+  }
+
+  /* Main nav */
+  nav {
+    display: none;
+  }
+  .menu a {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .hero-heading {
+    left: 5.4%;
+    top: 20%;
+  }
+
+  .hero-heading p .break {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 2.8rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  /* Hero cards */
+  .hero-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 83%;
+  }
+
+  .hero-cards .card {
+    width: 100%;
   }
 
   .hero-cards .card:first-child h3,
@@ -1128,196 +1332,12 @@ footer .social-icons {
   .person-bio {
     padding: 0.8rem;
     width: 80%;
-    right: 6%;
-    top: 67%;
+    right: 5%;
+    top: 70%;
   }
 
   .person-bio h3 {
-    margin: 0;
-  }
-
-  .person-bio p {
-    margin: 0;
-  }
-
-  /* Customers Section */
-  .customers {
-    padding: 0 3rem;
-  }
-
-  /* Services Section */
-  .services {
-    padding: 0 2rem;
-    padding-bottom: 10rem;
-  }
-
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-  }
-
-  /* Blog Section */
-  .blog {
-    padding: 0 2rem;
-  }
-
-  .blog p {
-    width: 100%;
-  }
-
-  .blog .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* Footer */
-  footer {
-    padding: 0 2rem;
-  }
-
-  .footer-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-}
-
-@media (max-width: 375px) {
-  /* Mobile nav */
-  .mobile-nav {
-    display: flex;
-  }
-
-  /* Main nav */
-  nav {
-    display: none;
-  }
-  .menu a {
-    font-size: 1rem;
-    padding: 0.8rem 0.5rem;
-  }
-
-  .hero-heading {
-    left: 10.5%;
-    top: 20%;
-  }
-
-  .hero-heading p .break {
-    display: none;
-  }
-
-  header h1 {
-    font-size: 2.8rem;
-  }
-
-  header p {
-    font-size: 1.2rem;
-  }
-
-  /* Hero cards */
-  .hero-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-  }
-
-  .hero-cards .card {
-    width: 96%;
-  }
-
-  .hero-cards .card:first-child h3,
-  .hero-cards .card:first-child p,
-  .hero-cards .card:first-child a {
-    display: none;
-  }
-
-  .hero-cards .card:nth-child(2) h3,
-  .hero-cards .card:nth-child(2) p,
-  .hero-cards .card:nth-child(2) a {
-    display: none;
-  }
-
-  .hero-cards .card:first-child,
-  .hero-cards .card:nth-child(2) {
-    padding-bottom: 0;
-  }
-
-  .hero-cards .card:first-child .icon,
-  .hero-cards .card:nth-child(2) .icon {
-    margin-bottom: 0.4rem;
-  }
-  .card .icon {
-    font-size: 2.4rem;
-  }
-  .card h3 {
-    font-size: 1.3rem;
-  }
-
-  .card p {
-    font-size: 1.1rem;
-  }
-
-  /* Intro Section */
-  .intro {
-    padding: 20rem 2rem;
-    padding-bottom: 10rem;
-  }
-
-  .intro-row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .intro-left-col {
-    flex-basis: 100%;
-  }
-
-  .intro-left-col img {
-    width: 100%;
-  }
-
-  .intro-right-col {
-    flex-basis: 100%;
-  }
-
-  .sub-heading-content .bar {
-    width: 8rem;
-  }
-
-  /* Stats Section */
-  .stats {
-    height: 18rem;
-    padding: 10rem 0;
-  }
-
-  .stats .container {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  /* Leadership Section */
-  .leadership {
-    padding: 0 2rem;
-  }
-
-  .leadership-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .leadership-col img {
-    width: 100%;
-  }
-
-  .person-bio {
-    padding: 1.4rem;
-    width: 80%;
-    right: 6%;
-    top: 76%;
-  }
-
-  .person-bio h3 {
-    margin: 0;
+    margin: 1rem 0;
   }
 
   .person-bio p {
@@ -1342,11 +1362,11 @@ footer .social-icons {
 
   /* Blog Section */
   .blog {
-    padding: 0 2rem;
+    padding: 0;
   }
 
   .blog p {
-    width: 100%;
+    width: 95%;
   }
 
   .blog .gallery-grid {
@@ -1360,7 +1380,7 @@ footer .social-icons {
 
   .footer-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
@@ -1382,7 +1402,7 @@ footer .social-icons {
   }
 
   .hero-heading {
-    left: 6.5%;
+    left: 3.2%;
     top: 20%;
   }
 
@@ -1402,7 +1422,7 @@ footer .social-icons {
   .hero-cards {
     display: grid;
     grid-template-columns: 1fr;
-    width: 80%;
+    width: 84%;
   }
 
   .hero-cards .card {
@@ -1487,7 +1507,7 @@ footer .social-icons {
 
   .leadership-row {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
 
@@ -1496,14 +1516,14 @@ footer .social-icons {
   }
 
   .person-bio {
-    padding: 1.4rem;
-    width: 83%;
+    padding: 0.8rem;
+    width: 80%;
     right: 4%;
-    top: 76%;
+    top: 71%;
   }
 
   .person-bio h3 {
-    margin: 0;
+    margin: 1rem 0;
   }
 
   .person-bio p {
@@ -1533,11 +1553,11 @@ footer .social-icons {
 
   /* Blog Section */
   .blog {
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .blog p {
-    width: 100%;
+    width: 90%;
   }
 
   .blog .gallery-grid {
