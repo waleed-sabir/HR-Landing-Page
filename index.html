@@ -37,7 +37,25 @@
         <div class="menu">
           <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+
+          <!-- Bootstrap Dropdown -->
+          <div class="dropdown">
+            <a
+              class="btn"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services <i class="fa-solid fa-angle-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">HR Consulting</a></li>
+              <li><a class="dropdown-item" href="#">Leadership Training</a></li>
+              <li><a class="dropdown-item" href="#">HR Management</a></li>
+            </ul>
+          </div>
           <a href="#">Blog</a>
           <a href="#">Contact</a>
         </div>
@@ -54,13 +72,13 @@
 
         <!-- Hero buttons -->
         <div class="hero-btns">
-          <button class="btn">Get Started</button>
+          <button class="bttn">Get Started</button>
           <a href="#">Learn More</a>
         </div>
 
         <!-- Hero cards -->
         <div class="hero-cards">
-          <div class="card">
+          <div class="single-card">
             <div class="icon">
               <i class="fa-solid fa-users-between-lines"></i>
             </div>
@@ -72,7 +90,7 @@
             <a href="#">Learn More</a>
           </div>
 
-          <div class="card">
+          <div class="single-card">
             <div class="icon"><i class="fa-solid fa-user-group"></i></div>
             <h3>Strategic Partners</h3>
             <p>
@@ -82,7 +100,7 @@
             <a href="#">Learn More</a>
           </div>
 
-          <div class="card">
+          <div class="single-card">
             <div class="icon"><i class="fa-solid fa-infinity"></i></div>
             <h3>Infinite Possibilities</h3>
             <p>
@@ -204,31 +222,12 @@
 
     <!-- Customers Section -->
 
-    <!-- CAROUSEL -->
-    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-</div>
--->
     <section class="customers">
       <h2>Happy Customers</h2>
       <div class="customer-container">
         <div class="quote"><i class="fa-solid fa-quote-left"></i></div>
-        <!-- Carousel -->
+
+        <!-- Bootstrap Carousel -->
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -242,22 +241,19 @@
               class="active"
               aria-current="true"
               aria-label="Slide 1"
-            >
-            </button>
+            ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
-            >
-            </button>
+            ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="2"
               aria-label="Slide 3"
-            >
-            </button>
+            ></button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -289,20 +285,7 @@
             </div>
           </div>
         </div>
-        <!-- Carousel -->
-        <!-- <blockquote>
-          "Far far away, behind the word mountains, far from the countries
-          Volkalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of Semantics, a large
-          language ocean."
-        </blockquote>
-        <p>Dew Wilson, CEO and Founder of CoLab</p>
-        <div class="pagination">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div> -->
+      </div>
     </section>
 
     <!-- Services Section -->
