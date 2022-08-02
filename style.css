@@ -18,83 +18,44 @@ header {
   background-size: cover;
 }
 
-.mobile-nav {
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #0389ff;
+/* BOOTSTRAP NAVIGATION */
+nav.navbar {
+  width: 61%;
 }
-.mobile-logo {
-  background-color: #0389ff;
-  padding: 2rem;
-  font-size: 1.5rem;
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  text-decoration: none;
   color: #fff;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.mobile-nav span::before {
-  content: "";
-  display: block;
-  height: 0.3rem;
-  width: 2.3rem;
-
-  background-color: #fff;
-  margin: 0;
-  margin-top: 0.8rem;
-  border-radius: 10px;
+.nav-link:hover {
+  color: #999;
 }
-
-.mobile-nav span {
-  height: 0.3rem;
-  width: 2.3rem;
-  background-color: #fff;
-  margin: 0;
-  margin-bottom: 2rem;
-  margin-right: 2rem;
-  border-radius: 10px;
-}
-
-.mobile-nav span::after {
-  content: "";
-  display: block;
-  height: 0.3rem;
-  width: 2.3rem;
-  background-color: #fff;
-  margin-top: 0.5rem;
-  border-radius: 10px;
-}
-
-/* Main nav */
 
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.6rem;
   height: 14rem;
-  width: 85%;
   margin: auto;
   position: relative;
 }
 
-.logo {
+.nav-logo {
   color: #fff;
+  font-size: 1.5rem;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
+.nav-logo:hover {
+  color: #000;
 }
 
 /* Bootstrap Dropdown */
-.dropdown {
-  display: none;
-}
-
-@media (min-width: 576px) {
-  .dropdown {
-    display: block;
-  }
-}
 
 .dropdown .btn {
   background-color: transparent;
@@ -109,15 +70,7 @@ nav {
 .dropdown-menu .dropdown-item {
   color: #999;
   font-weight: 400;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #fff;
-  padding: 0.8rem 1rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-size: 1.4rem;
 }
 
 .hero-heading {
@@ -569,6 +522,7 @@ footer {
   font-size: 1.2rem;
   line-height: 1.8;
   color: #000;
+  margin-bottom: 0;
 }
 
 .footer-col:first-child {
@@ -600,6 +554,10 @@ footer .social-icons {
 
 /* MEDIA QUERIES */
 @media (max-width: 1400px) {
+  nav.navbar {
+    width: 62%;
+  }
+
   /* Intro Section */
   .intro {
     padding: 25rem 26rem;
@@ -629,6 +587,9 @@ footer .social-icons {
 }
 
 @media (max-width: 1300px) {
+  nav.navbar {
+    width: 63%;
+  }
   /* Intro Section */
   .intro {
     padding: 25rem 22rem;
@@ -663,6 +624,10 @@ footer .social-icons {
 }
 
 @media (max-width: 1200px) {
+  nav.navbar {
+    width: 65%;
+  }
+
   /* Hero cars */
   .hero-cards {
     width: 76%;
@@ -700,6 +665,9 @@ footer .social-icons {
 }
 
 @media (max-width: 1024px) {
+  nav.navbar {
+    width: 69%;
+  }
   /* Intro Section */
   .intro {
     padding: 20rem 8rem;
@@ -754,7 +722,12 @@ footer .social-icons {
 
 @media (max-width: 768px) {
   /* Header */
-  .menu a {
+
+  nav.navbar {
+    width: 83%;
+  }
+
+  .nav-link {
     font-size: 1rem;
   }
 
@@ -896,12 +869,16 @@ footer .social-icons {
 
 @media (max-width: 586px) {
   /* Header */
+
+  nav.navbar {
+    width: 94%;
+  }
+
   nav {
     justify-content: space-between;
   }
-  .menu a {
+  .nav-link {
     font-size: 1rem;
-    padding: 0.8rem 0.5rem;
   }
 
   .hero-heading {
@@ -1074,17 +1051,40 @@ footer .social-icons {
 /* MEDIA QUERIES FOR MOBILE SCREENS */
 
 @media (max-width: 425px) {
-  /* Mobile nav */
-  .mobile-nav {
-    display: flex;
-  }
-  /* Main nav */
+  /* Bootstrap mobile nav */
+
   nav {
-    display: none;
+    height: 0rem;
   }
-  .menu a {
-    font-size: 1rem;
-    padding: 0.8rem 0.5rem;
+
+  header {
+    width: 107vw;
+  }
+
+  nav.navbar.navbar-expand-sm.bg-transparent {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-toggler-icon {
+    color: #fff;
+    filter: invert(100%);
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .nav-link {
+    padding: 1rem 0;
+  }
+
+  .container-fluid {
+    background-color: #0389ff;
+    padding: 1rem;
+    z-index: 10;
   }
 
   .hero-heading {
@@ -1255,20 +1255,6 @@ footer .social-icons {
 }
 
 @media (max-width: 375px) {
-  /* Mobile nav */
-  .mobile-nav {
-    display: flex;
-  }
-
-  /* Main nav */
-  nav {
-    display: none;
-  }
-  .menu a {
-    font-size: 1rem;
-    padding: 0.8rem 0.5rem;
-  }
-
   .hero-heading {
     left: 5.4%;
     top: 20%;
@@ -1439,21 +1425,6 @@ footer .social-icons {
 }
 
 @media (max-width: 320px) {
-  /* Mobile nav */
-  .mobile-nav {
-    display: flex;
-  }
-
-  /* Main nav */
-  nav {
-    display: none;
-  }
-
-  .menu a {
-    font-size: 1rem;
-    padding: 0.8rem 0.5rem;
-  }
-
   .hero-heading {
     left: 3.2%;
     top: 20%;
