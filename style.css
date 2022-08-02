@@ -373,7 +373,32 @@ header p {
   margin-bottom: 8rem;
 }
 
-.customers .pagination {
+.customers .carousel-indicators [data-bs-target] {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #000;
+  margin-right: 0.7rem;
+}
+
+.carousel-indicators {
+  margin-bottom: 1rem;
+}
+
+/* .carousel-indicators button span {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #999;
+  margin-right: 0.7rem;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+} */
+
+/* .customers .pagination {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,7 +416,7 @@ header p {
 
 .pagination span:first-child {
   background-color: #000;
-}
+} */
 
 /* Serivces Section */
 
@@ -399,6 +424,7 @@ header p {
   background-color: #f8f9fa;
   padding: 0 28rem;
   padding-bottom: 10rem;
+  margin-top: 6rem;
 }
 
 .services h2 {
@@ -1532,7 +1558,7 @@ footer .social-icons {
 
   /* Customers Section */
   .customers {
-    padding: 0;
+    padding: 0 1rem;
   }
 
   .customers blockquote,
